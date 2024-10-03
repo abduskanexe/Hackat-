@@ -1,37 +1,75 @@
+#!/bin/bash
+
+cat <<EOF
 # Hackato
+
 La FitConnect API es una interfaz web que gestiona actividades físicas. Permite a los usuarios registrarse, iniciar sesión, crear y buscar actividades, inscribirse y desinscribirse en ellas, y manejar datos en formato JSON. Desarrollada con Flask y SQLAlchemy, brinda un entorno seguro y eficiente para la gestión de actividades.
 
 # Web API
 
-# Para poder entrar en la API, sigue los siguientes pasos para ejecutarla y poder verla.
+## Descripción
 
-# Pasos de instalación
+Esta Web API gestiona actividades físicas, permitiendo a los usuarios crear, consultar y administrar actividades. Sigue los pasos a continuación para instalar y ejecutar la API en Ubuntu.
 
-# 1. Instala el paquete de Python y MySQL
-sudo apt-get install python3-venv
-sudo apt-get install mysql-server
+## Requisitos
 
-# 2. Crea un directorio para la Web API
-mkdir webapi
+- Python 3
+- MySQL
 
-# 3. Navega al directorio y pasa los archivos descargados
-cd webapi
+## Pasos de Instalación
 
-# 4. Crea un entorno virtual
-python3 -m venv venv
+1. **Instala el paquete de Python y MySQL:**
 
-# 5. Activa el entorno virtual
-source venv/bin/activate
+   \`\`\`bash
+   sudo apt-get install python3-venv
+   sudo apt-get install mysql-server
+   \`\`\`
 
-# 6. Asegúrate de tener los archivos del proyecto en este directorio.
+2. **Crea un directorio para la Web API:**
 
-# 7. Instala las dependencias necesarias
-pip install -r requirements.txt
+   \`\`\`bash
+   mkdir webapi
+   \`\`\`
 
-# 8. Ejecuta el script de configuración de la base de datos como root
-sudo ./setup_db.sh
+3. **Navega al directorio y pasa los archivos descargados:**
 
-# 9. Finalmente, ejecuta la Web API
-python app.py
+   \`\`\`bash
+   cd webapi
+   \`\`\`
 
-# ¡Listo! Ahora deberías poder acceder a la Web API.
+4. **Crea un entorno virtual:**
+
+   \`\`\`bash
+   python3 -m venv venv
+   \`\`\`
+
+5. **Activa el entorno virtual:**
+
+   \`\`\`bash
+   source venv/bin/activate
+   \`\`\`
+
+6. **Asegúrate de tener los archivos del proyecto en este directorio.**
+
+7. **Instala las dependencias necesarias:**
+
+   \`\`\`bash
+   pip install -r requirements.txt
+   \`\`\`
+
+8. **Ejecuta el script de configuración de la base de datos como root:**
+
+   \`\`\`bash
+   sudo ./setup_db.sh
+   \`\`\`
+
+9. **Finalmente, ejecuta la Web API:**
+
+   \`\`\`bash
+   python app.py
+   \`\`\`
+
+## ¡Listo!
+
+Ahora deberías poder acceder a la Web API.
+EOF
