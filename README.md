@@ -3,20 +3,35 @@
 cat <<EOF
 # Hackato
 
-La FitConnect API es una interfaz web que gestiona actividades físicas. Permite a los usuarios registrarse, iniciar sesión, crear y buscar actividades, inscribirse y desinscribirse en ellas, y manejar datos en formato JSON. Desarrollada con Flask y SQLAlchemy, brinda un entorno seguro y eficiente para la gestión de actividades.
+## FitConnect API
 
-# Web API
+La **FitConnect API** es una interfaz web que gestiona actividades físicas. Permite a los usuarios:
+- Registrarse
+- Iniciar sesión
+- Crear y buscar actividades
+- Inscribirse y desinscribirse en actividades
+- Manejar datos en formato JSON
 
-## Descripción
+Desarrollada con **Flask** y **SQLAlchemy**, brinda un entorno seguro y eficiente para la gestión de actividades.
 
-Esta Web API gestiona actividades físicas, permitiendo a los usuarios crear, consultar y administrar actividades. Sigue los pasos a continuación para instalar y ejecutar la API en Ubuntu.
+---
 
-## Requisitos
+## Web API
 
-- Python 3
-- MySQL
+### Descripción
+
+Esta Web API gestiona actividades físicas, permitiendo a los usuarios crear, consultar y administrar actividades. 
+
+### Requisitos
+
+- **Python 3**
+- **MySQL**
+
+---
 
 ## Pasos de Instalación
+
+Sigue los pasos a continuación para instalar y ejecutar la API en Ubuntu:
 
 1. **Instala el paquete de Python y MySQL:**
 
@@ -69,7 +84,10 @@ Esta Web API gestiona actividades físicas, permitiendo a los usuarios crear, co
    python app.py
    \`\`\`
 
+---
+
 ## ¡Listo!
 
-Ahora deberías poder acceder a la Web API.
+Ahora deberías poder acceder a la **Web API**.
+
 EOF
